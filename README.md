@@ -91,24 +91,90 @@ PostgreSQL is one of the most common relational database management systems (RDB
 3. Uncommon in Web Hosting:
     - While PostgreSQL is widely used in projects, it is uncommon to see support for it in hosting services. Thankfully we are starting to see more support for PostgreSQL as we progress.
 
-### Q3: Discuss the implementation of Agile project management methodology
-### Q4: Provide an overview and description of a standard source control workflow
-### Q5: Provide an overview and description of a standard software testing process (e.g. manual testing)
-### Q6: Discuss and analyse requirements related to information system security and how they relate to the project
-### Q7: Discuss common methods of protecting information and data and how you would apply them to the project
-### Q8: Research what your legal obligations are in relation to handling user data and how they can be met for the project
-### Q9: Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure.
+## Q3: Discuss the implementation of Agile project management methodology
+
+The agile project management system is a industry standard system in the software engineering space. This management system has grown its users due to the iterative and incremental approach. It emphasizes flexiblitity, collaboration and customer satifaction above all else.
+
+## Q4: Provide an overview and description of a standard source control workflow
+
+A standard source control workflow is a process that dev teams use to manage any changes done in the source code to a project, collaborate, and manage versions. The most popular of these workflows is Git. Git works very much like a tree diagram with the ```main``` branch being the root, which sprouts out into designated supporting branches:
+
+!['Git Workflow Diagram'](/git.png)
+
+1. Main Branches:
+    - Usually name the ```Master``` or ```Main``` branch, this is where you activate and most up-to-date version of your project sits. The consumer version.
+    - The ```develop``` branch serves as an integration branch for any ongoing development. Features, Hot Fixes, Updates, anything that would change the source code. These components will be merged into this branch for testing before being integrated into the ```Main``` branch for consumers.
+
+2. Suporting Branches:
+    - Feature branches are used to contain the development of new features to be later merged with the ```develop``` branch. Each new feature has its own branch.
+
+    - Hotfix branches are used to implement a small quiz on a critical error in the ```Main``` branch.
+
+    - Release branches are used to merge into both the ```Main``` branch and the ```Develop``` branch and are assigned a version tag to mark the release.
+
+## Q5: Provide an overview and description of a standard software testing process (e.g. manual testing)
+
+
+
+## Q6: Discuss and analyse requirements related to information system security and how they relate to the project
+
+
+
+## Q7: Discuss common methods of protecting information and data and how you would apply them to the project
+
+
+
+## Q8: Research what your legal obligations are in relation to handling user data and how they can be met for the project
+
+
+
+## Q9: Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure.
+
+
+
 ### Q10: Describe the integrity aspects of the relational database model. Your description should include information about the types of data integrity and how they can be enforced in a relational database.
-### Q11: Describe the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database.
-### Q12: Conduct research into a web application (app) and answer the following parts:
-#### a. List and describe the software used by the app.
-#### b. Describe the hardware used to host the app.
-#### c. Describe the interaction of technologies within the app
-#### d. Describe the way data is structured within the app
-#### e. Identify entities which must be tracked by the app
-#### f. Identify the relationships and associations between the entities you have identified in part (e)
-#### g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model)
 
 
-### References:
+
+## Q11: Describe the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database.
+
+
+
+## Q12: Conduct research into a web application (app) and answer the following parts:
+
+### a. List and describe the software used by the app.
+
+
+
+### b. Describe the hardware used to host the app.
+
+
+
+### c. Describe the interaction of technologies within the app
+
+
+
+### d. Describe the way data is structured within the app
+
+
+
+### e. Identify entities which must be tracked by the app
+
+
+
+### f. Identify the relationships and associations between the entities you have identified in part (e)
+
+
+
+### g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model)
+
+
+
+## References:
+
 - https://flask.palletsprojects.com/en/3.0.x/lifecycle/
+- https://realpython.com/flask-blueprint/
+- https://flask.palletsprojects.com/en/3.0.x/quickstart/
+- https://www.guru99.com/introduction-postgresql.html
+- https://cloud.google.com/learn/postgresql-vs-sql
+- 
