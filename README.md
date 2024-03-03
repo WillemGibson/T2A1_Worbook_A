@@ -306,31 +306,30 @@ Discord is very open about what information they track of users' interactions in
 
 ### f. Identify the relationships and associations between the entities you have identified in part (e)
 
-The relationships between these said entities can all come under one belt. Users. The identifiers can be used to assign personal information to users and distinguish them from other users. Commercial information is directly tied to user engagement with the platform. Financial is dependable on user behavior and entry of personal data. Network information is also tied to user behaviour same as the inference data. 
+The relationships between these said entities can all come under one belt. Users. The identifiers can be used to assign personal information to users and distinguish them from other users. Commercial information is directly tied to user engagement with the platform. Financial is dependable on user behavior and entry of personal data. Network information is also tied to user behaviour same as the inference data.
 
 ### g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model)
 
 ![Discord ERD Diagram](/discord.jpg)
 
-## References:
+## References
 
-- https://flask.palletsprojects.com/en/3.0.x/lifecycle/
-- https://realpython.com/flask-blueprint/
-- https://flask.palletsprojects.com/en/3.0.x/quickstart/
-- https://www.guru99.com/introduction-postgresql.html
-- https://cloud.google.com/learn/postgresql-vs-sql
-- https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
-- https://www.guru99.com/manual-testing.html
-- https://www.atlassian.com/continuous-delivery/software-testing/types-of-software-testing
--https://www.geeksforgeeks.org/software-testing-manual-testing/
-- https://www.atlassian.com/agile#:~:text=What%20is%20the%20Agile%20methodology,planning%2C%20executing%2C%20and%20evaluating.
-- https://en.wikipedia.org/wiki/Agile_software_development
-- https://www.bmc.com/blogs/data-normalization/
-- https://www.astera.com/type/blog/data-integrity-in-a-database/
-- https://www.linkedin.com/pulse/tech-stack-discord-faysal-ahmed/
-- https://discord.com/blog/how-discord-stores-trillions-of-messages
-- https://discord.com/privacy
-- https://discord.com/blog/how-discord-creates-insights-from-trillions-of-data-points
-- https://creately.com/diagram/example/jqf0pnzj2/discord-diagrama-clases-classic
-
-- [Get pic url](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gliffy.com%2Fblog%2Fgitflow-diagrams&psig=AOvVaw3hFv6YtNqGq6ePNWKy3kir&ust=1709543229497000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCPCikvne14QDFQAAAAAdAAAAABAE)
+- flask.palletsprojects.com. (n.d.). Application Structure and Lifecycle — Flask Documentation (3.0.x). [online] Available at: <https://flask.palletsprojects.com/en/3.0.x/lifecycle/>.
+- Python, R. (n.d.). Use a Flask Blueprint to Architect Your Applications – Real Python. [online] realpython.com. Available at: <https://realpython.com/flask-blueprint/>.
+- flask.palletsprojects.com. (n.d.). Quickstart — Flask Documentation (3.0.x). [online] Available at: <https://flask.palletsprojects.com/en/3.0.x/quickstart/>.
+- Peterson, R. (2019). What is PostgreSQL? Introduction, History, Features, Advantages. [online] Guru99.com. Available at: <https://www.guru99.com/introduction-postgresql.html>.
+- Google Cloud. (n.d.). PostgreSQL vs. SQL Server: What’s the difference? [online] Available at: <https://cloud.google.com/learn/postgresql-vs-sql>.
+- Atlassian (2019). Gitflow Workflow | Atlassian Git Tutorial. [online] Atlassian. Available at: <https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow>.
+- Hamilton, T. (2019). Manual Testing Tutorial for Beginners: Concepts, Types, Tool. [online] Guru99.com. Available at: <https://www.guru99.com/manual-testing.html>.
+- Pittet, S. (2019). The different types of testing in Software. [online] Atlassian. Available at: <https://www.atlassian.com/continuous-delivery/software-testing/types-of-software-testing>.
+- GeeksforGeeks. (2019). Software Testing | Manual Testing. [online] Available at: <https://www.geeksforgeeks.org/software-testing-manual-testing/>.
+- Atlassian (2023). What is Agile? [online] Atlassian. Available at: <https://www.atlassian.com/agile#:~:text=What%20is%20the%20Agile%20methodology>.
+- Wikipedia Contributors (2018). Agile software development. [online] Wikipedia. Available at: <https://en.wikipedia.org/wiki/Agile_software_development>.
+- Watts, S. (2020). What Is Data Normalization? [online] BMC Blogs. Available at: <https://www.bmc.com/blogs/data-normalization/>.
+- Naeem, T. (2020). Data Integrity in a Database - Why Is It Important. [online] Astera. Available at: <https://www.astera.com/type/blog/data-integrity-in-a-database/>.
+- <www.linkedin.com>. (n.d.). Tech Stack of Discord. [online] Available at: <https://www.linkedin.com/pulse/tech-stack-discord-faysal-ahmed/>.
+- discord.com. (n.d.). How Discord Stores Trillions of Messages. [online] Available at: <https://discord.com/blog/how-discord-stores-trillions-of-messages>.
+- Discord. (2023). Privacy Policy. [online] Available at: <https://discord.com/privacy>.
+- discord.com. (n.d.). How Discord Creates Insights from Trillions of Data Points. [online] Available at: <https://discord.com/blog/how-discord-creates-insights-from-trillions-of-data-points>.
+- creately.com. (n.d.). Discord - Diagrama clases [classic] | Creately. [online] Available at: <https://creately.com/diagram/example/jqf0pnzj2/discord-diagrama-clases-classic> [Accessed 3 Mar. 2024].
+- Google.com. (2024). Redirect Notice. [online] Available at: <https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gliffy.com%2Fblog%2Fgitflow-diagrams&psig=AOvVaw3hFv6YtNqGq6ePNWKy3kir&ust=1709543229497000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCPCikvne14QDFQAAAAAdAAAAABAE> [Accessed 3 Mar. 2024].
