@@ -166,14 +166,14 @@ Manual testing is a process in which a developer manually executes test cases wi
 ## Q7: Discuss common methods of protecting information and data and how you would apply them to the project
 
 1. Backups:
-    - ACME will need regular automated back ups of all data this  prevents the loss of data in the event of an attack, power outages and/or corruption.
-    - Having anothor backup in another phyical locaiton is also recommended
+    - ACME will need regular automated backups of all data this prevents the loss of data in the event of an attack, power outages, and/or corruption.
+    - Having another backup in another physical location is also recommended
 
 2. Patches and Updates:
-    - ACME will also benefit from regualr updates and hot fixes to teh web app to ensure the latest technology being used and all issuing on the platform and addressed asap.
-    - Also monitoring for issueing in the platform at all times.
+    - ACME will also benefit from regular updates and hot fixes to the web app to ensure the latest technology is being used and all issues on the platform and addressed ASAP.
+    - Also monitoring for issues in the platform at all times.
 
-3. Phyiscal security measures:
+3. Physical security measures:
     - ACME's data should be upheld to the data protection regulations.
 
 ## Q8: Research what your legal obligations are in relation to handling user data and how they can be met for the project
@@ -192,7 +192,7 @@ Manual testing is a process in which a developer manually executes test cases wi
 
 ## Q9: Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure
 
-The realational database model is one of the most common models in databsea technology. It is used to seperate specific information and connect them respectively. Data is sorted into tables, also known as relations. These are sorted in collumn and rows to better layout for readability, which can relate to eachtother using foregin keys. Here is a dive into the basic structure of a relational databsae:
+The relational database model is one of the most common models in database technology. It is used to separate specific information and connect them respectively. Data is sorted into tables, also known as relations. These are sorted in columns and rows to better layout for readability, which can relate to each other using foreign keys. Here is a dive into the basic structure of a relational database:
 
 1. Tables
     - Tables are used to separate the information into specific areas. Such as users, customers, products, orders, etc.
@@ -261,35 +261,56 @@ The realational database model is one of the most common models in databsea tech
     WHERE condition;
      ```
 
-## Q12: Conduct research into a web application (app) and answer the following parts:
+## Q12: Conduct research into a web application (app) and answer the following parts
 
-### a. List and describe the software used by the app.
+The following case study will be conducted on the communication platform known as Discord.
 
+### a. List and describe the software used by the app
 
+Discords tech stack/software is built up of several programming languages and frameworks. These include:
 
-### b. Describe the hardware used to host the app.
+**- Frontend Development:** Discord primarily uses JavaScript as their main programming language stacked up with the React.js framework to create their user interfaces. Also utilising CSS for styling the various elements.
 
+**- Backend Development:** Discord mainly uses Elixir, which is built on the Erlang Virtual Machine (BEAM) in combination with the Phoenix web framework for real-time applications. Their main choice in database management and creation is PostgreSQL.
 
+**- Real-Time Communication:** Discord uses WebSockets to transmit all forms of communication over a TCP connection. For Voice and Video communication, Discord uses Opus audio codec & WebRTC (Web Real-Time Communication) protocol.
+
+### b. Describe the hardware used to host the app
+
+**- Hardware Infrastructure** Discord uses a combination of cloud-based platforms and physically distributed systems around the globe to host and run their applications. They primarily use both Amazon Web Services (AWS) and Google Cloud services for their cloud-based infostructure for most and the physical servers for distributed caching systems and load balancing.
 
 ### c. Describe the interaction of technologies within the app
 
-
+**- Service Architecture:** Discord follows a very strict microservices architecture for their interaction of technologies. Microservice architecture is the process in which all functionalities and components are divided into smaller, independent services that all communicate with each other over these servers. This helps Discord to be optimized and stay organized when in development.
 
 ### d. Describe the way data is structured within the app
 
+**- Data Structure:** Discord was in need of a DAG (Directed Acyclic Graph) System to store all their user's data, therefore they opted for derived tables in a BigQuery Data warehouse. A divided table can be defined as a SQL SELECT statement that references raw data or other derived tables. This diagram is used to reference the approach taken by the company in data structure:
+![Discord Data Structure Diagram](/diagram.png)
 
+### e. Identify entities that must be tracked by the app
 
-### e. Identify entities which must be tracked by the app
+Discord is very open about what information they track of users' interactions in their privacy policy. Discord states that the only information they track is:
 
+- Identifiers (such as your username, the email address you used to sign up, and your phone number if you’ve chosen to provide it)
 
+- Commercial information (a record of what you’ve bought from Discord if anything)
+
+- Financial data (payment information and your history of purchases from Discord)
+
+- Internet or other network information (how you interact with the application)
+
+- Internet or other network information (how you interact with the application)
+
+- Inference data about you (for example, what content you may be interested in)
 
 ### f. Identify the relationships and associations between the entities you have identified in part (e)
 
-
+The relationships between these said entities can all come under one belt. Users. The identifiers can be used to assign personal information to users and distinguish them from other users. Commercial information is directly tied to user engagement with the platform. Financial is dependable on user behavior and entry of personal data. Network information is also tied to user behaviour same as the inference data. 
 
 ### g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model)
 
-
+![Discord ERD Diagram](/discord.jpg)
 
 ## References:
 
@@ -306,5 +327,10 @@ The realational database model is one of the most common models in databsea tech
 - https://en.wikipedia.org/wiki/Agile_software_development
 - https://www.bmc.com/blogs/data-normalization/
 - https://www.astera.com/type/blog/data-integrity-in-a-database/
+- https://www.linkedin.com/pulse/tech-stack-discord-faysal-ahmed/
+- https://discord.com/blog/how-discord-stores-trillions-of-messages
+- https://discord.com/privacy
+- https://discord.com/blog/how-discord-creates-insights-from-trillions-of-data-points
+- https://creately.com/diagram/example/jqf0pnzj2/discord-diagrama-clases-classic
 
-- Get pic url
+- [Get pic url](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gliffy.com%2Fblog%2Fgitflow-diagrams&psig=AOvVaw3hFv6YtNqGq6ePNWKy3kir&ust=1709543229497000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCPCikvne14QDFQAAAAAdAAAAABAE)
