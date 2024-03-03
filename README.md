@@ -93,7 +93,21 @@ PostgreSQL is one of the most common relational database management systems (RDB
 
 ## Q3: Discuss the implementation of Agile project management methodology
 
-The agile project management system is a industry standard system in the software engineering space. This management system has grown its users due to the iterative and incremental approach. It emphasizes flexiblitity, collaboration and customer satifaction above all else.
+The agile project management system is an industry-standard system in the software engineering space. This management system has grown its users due to the iterative and incremental approach. It emphasizes flexibility, collaboration, and customer satisfaction above all else. Here is a quick dive into the implementation of the system:
+
+1. Define user-stories:
+    - Take a look at the requirements of the software and represent them as if you were a user.
+    - Create a list of functionalities and features.
+    - Created a backlog of all user stories.
+
+2. Sprints:
+    - Plan work in short bursts, or sprints, nothing exceeding 2-4 weeks.
+    - In these sprints, dev teams will be assigned different user stories to complete.
+
+3. Daily stand-up meetings:
+    - These go for 15 mins as you go around asking 3 simple questions to everyone then moving on with the work ahead for the day.
+    - Each person will answer what the
+    -This is used to make sure the work is progressing towards the sprint goals.
 
 ## Q4: Provide an overview and description of a standard source control workflow
 
@@ -114,23 +128,86 @@ A standard source control workflow is a process that dev teams use to manage any
 
 ## Q5: Provide an overview and description of a standard software testing process (e.g. manual testing)
 
+Manual testing is a process in which a developer manually executes test cases without using any automated tools to complete the testing of a software solution. The process involves the careful systematic examination of the developer's code, software's functionality, and features to identify any issues or errors that may affect the solutions mark against the specified requirements. This is a quick overview of the process:
+
+1. Planning:
+    - Going over the software solution's requirements.
+    - Developing and planning an outline of the testing process.
+    - Identifying the features and functionalities of the solution.
+
+2. Setting up the testing environment:
+    - Creating the test environment by installing and configuring any necessary third-party software and/or test data.
+    - Running through the environment closely to make sure it resembles a realistic testing case.
+
+3. Execution of testing:
+    - Inputting necessary test data into test cases
+    - One last final check of the reliability of the test cases.
+    - Manually executing the testing environments for the software solution.
+
+4. Reporting findings:
+    - Report any identified results or errors.
+    - Provide detailed accounts of all test outcomes.
+    - Communicate with the dev team your findings.
 
 
 ## Q6: Discuss and analyse requirements related to information system security and how they relate to the project
 
+1. Data encryption:
+    - In the ACME use case, using HTTPS to encrypt data between the web app's client and server and ensure that the connection is uninterrupted and secure.
+    - Also using web certificates to once again ensure the reliability and safety of the user's experience on ACME's web interface. 
 
+2. Authentication and Authorization: 
+    - Using user authentication and authorization on the web app will greatly increase the security of the site and allow the secure management of the app content.
+    - This can be a token-based session authentication to ensure that a user can be authenticated and authorized.
+
+3. Session Management:
+    - As mentioned above, this session-based token system will allow the distinction of main users and admins for content management and security.
+    - This will also create an environment in which the user will need to log in after a specific amount of time, removing the factor of hackers gaining access to a physical device getting in if the session has expired.
 
 ## Q7: Discuss common methods of protecting information and data and how you would apply them to the project
 
+1. Backups:
+    - ACME will need regular automated back ups of all data this  prevents the loss of data in the event of an attack, power outages and/or corruption.
+    - Having anothor backup in another phyical locaiton is also recommended
+
+2. Patches and Updates:
+    - ACME will also benefit from regualr updates and hot fixes to teh web app to ensure the latest technology being used and all issuing on the platform and addressed asap.
+    - Also monitoring for issueing in the platform at all times.
+
+3. Phyiscal security measures:
+    - ACME's data should be upheld to the data protection regulations. 
 
 
 ## Q8: Research what your legal obligations are in relation to handling user data and how they can be met for the project
 
+1. Privacy Law Compliance:
+    - ACME will need to adhere to the Australian Privacy Act 1988, to ensure the safety and security of their users.
+    - This will make sure that users are completely aware of what is happening with their data and how secure it is which will be all noted in a privacy agreement that is open to all users to view and read through.
 
+2. User Rights:
+    - Another legislation from the privacy act is users' rights. ACME will need to adhere to these just as equally as the privacy laws.
+    - This will ensure all users will have access to their personal data/information and be informed of how ACME will use it.
+
+3. Data collection:
+    - ACME will need to clearly state how and why they intend to get/use personal data.
+    - They will need to implement some sort of consent form to get legal confirmation of personal data collection.
 
 ## Q9: Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure.
 
+The realational database model is one of the most common models in databsea technology. It is used to seperate specific information and connect them respectively. Data is sorted into tables, also known as relations. These are sorted in collumn and rows to better layout for readability, which can relate to eachtother using foregin keys. Here is a dive into the basic structure of a relational databsae:
 
+1. Tables
+    - Tables are used to separate the information into specific areas. Such as users, customers, products, orders, etc.
+    - Each table consists of columns to specify certain aspects of each entry, for example, name, quantity, cost, etc.
+    - The rows are used to display each data entry as a readable structure. 
+
+2. Keys
+    - keys are used to sort and call different data entries, for example, foreign keys which are used to call data between tables.
+    - Another example of keys is primary keys. These are auto-incrementing integer entries to give each entry a specific number to call on. for example, entry 001, 002, 003, etc.
+
+3. Normalisation
+    - Normalisation is the act of cleaning up and preventing unnecessary data.
+    - It also reduces the likelihood of data issues.
 
 ### Q10: Describe the integrity aspects of the relational database model. Your description should include information about the types of data integrity and how they can be enforced in a relational database.
 
@@ -177,4 +254,14 @@ A standard source control workflow is a process that dev teams use to manage any
 - https://flask.palletsprojects.com/en/3.0.x/quickstart/
 - https://www.guru99.com/introduction-postgresql.html
 - https://cloud.google.com/learn/postgresql-vs-sql
-- 
+- https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+- https://www.guru99.com/manual-testing.html
+- https://www.atlassian.com/continuous-delivery/software-testing/types-of-software-testing
+-https://www.geeksforgeeks.org/software-testing-manual-testing/
+- https://www.atlassian.com/agile#:~:text=What%20is%20the%20Agile%20methodology,planning%2C%20executing%2C%20and%20evaluating.
+- https://en.wikipedia.org/wiki/Agile_software_development
+- https://www.bmc.com/blogs/data-normalization/
+
+
+
+- Get pic url
