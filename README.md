@@ -8,7 +8,7 @@ A flask application follows the Model-View-Controller (MVC) architecture. It is 
     - ```App``` is the main component of a Flask app and is an instance of the Flask class that represents the web app.
     - They are created by using ```Flask(__name__)```, where ```__name__``` is the name of the current Python module.
 
-    ```py 
+    ```py
     from flask import Flask
 
     app = Flask(__name__)
@@ -149,14 +149,13 @@ Manual testing is a process in which a developer manually executes test cases wi
     - Provide detailed accounts of all test outcomes.
     - Communicate with the dev team your findings.
 
-
 ## Q6: Discuss and analyse requirements related to information system security and how they relate to the project
 
 1. Data encryption:
     - In the ACME use case, using HTTPS to encrypt data between the web app's client and server and ensure that the connection is uninterrupted and secure.
-    - Also using web certificates to once again ensure the reliability and safety of the user's experience on ACME's web interface. 
+    - Also using web certificates to once again ensure the reliability and safety of the user's experience on ACME's web interface.
 
-2. Authentication and Authorization: 
+2. Authentication and Authorization:
     - Using user authentication and authorization on the web app will greatly increase the security of the site and allow the secure management of the app content.
     - This can be a token-based session authentication to ensure that a user can be authenticated and authorized.
 
@@ -175,8 +174,7 @@ Manual testing is a process in which a developer manually executes test cases wi
     - Also monitoring for issueing in the platform at all times.
 
 3. Phyiscal security measures:
-    - ACME's data should be upheld to the data protection regulations. 
-
+    - ACME's data should be upheld to the data protection regulations.
 
 ## Q8: Research what your legal obligations are in relation to handling user data and how they can be met for the project
 
@@ -192,14 +190,14 @@ Manual testing is a process in which a developer manually executes test cases wi
     - ACME will need to clearly state how and why they intend to get/use personal data.
     - They will need to implement some sort of consent form to get legal confirmation of personal data collection.
 
-## Q9: Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure.
+## Q9: Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure
 
 The realational database model is one of the most common models in databsea technology. It is used to seperate specific information and connect them respectively. Data is sorted into tables, also known as relations. These are sorted in collumn and rows to better layout for readability, which can relate to eachtother using foregin keys. Here is a dive into the basic structure of a relational databsae:
 
 1. Tables
     - Tables are used to separate the information into specific areas. Such as users, customers, products, orders, etc.
     - Each table consists of columns to specify certain aspects of each entry, for example, name, quantity, cost, etc.
-    - The rows are used to display each data entry as a readable structure. 
+    - The rows are used to display each data entry as a readable structure.
 
 2. Keys
     - keys are used to sort and call different data entries, for example, foreign keys which are used to call data between tables.
@@ -209,13 +207,59 @@ The realational database model is one of the most common models in databsea tech
     - Normalisation is the act of cleaning up and preventing unnecessary data.
     - It also reduces the likelihood of data issues.
 
-### Q10: Describe the integrity aspects of the relational database model. Your description should include information about the types of data integrity and how they can be enforced in a relational database.
+## Q10: Describe the integrity aspects of the relational database model. Your description should include information about the types of data integrity and how they can be enforced in a relational database
 
+1. Referential Integrity:
+    - This ensures that the relationships between tables are consistent throughout the database.
+    - This can be achieved by referencing child tables in parent tables and matching foreign keys with existing primary keys.
 
+2. Domain Integrity:
+    - This refers to the integrity of the range and domain of data in a database. In turn, preventing invalid data.
+    - This can be achieved by implementing the correct data types to columns and checking the contents of data entry.
 
-## Q11: Describe the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database.
+3. Entity Integrity:
+    - This refers to the integrity of each entry/row's primary key.
+    - this can be achieved by using auto-incrementing id attributes to each entry/row and making sure these attributes are not nullible.
 
+## Q11: Describe the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database
 
+1. INSERT:
+    - This refers to the act of adding an entry/row into a table of a database.
+    - Example:
+
+    ```sql
+    INSERT INTO table_name (column1, column2, column3, ...)
+    VALUES (value1, value2, value3, ...);
+    ```
+
+2. UPDATE:
+     - This refers to the act of modifying an entry/row into a table of a database.
+     - Example
+
+     ```sql
+    UPDATE table_name
+    SET column1 = value1, column2 = value2, ...
+    WHERE condition;
+     ```
+
+3. DELETE:
+     - This refers to the act of removing an entry/row from a table of a database.
+     - Example
+
+     ```sql
+    DELETE FROM table_name
+    WHERE condition;
+     ```
+
+4. SELECT:
+     - This refers to the act of retrieving an entry/row into a table of a database.
+     - Example
+
+     ```sql
+    SELECT column1, column2, ...
+    FROM table_name
+    WHERE condition;
+     ```
 
 ## Q12: Conduct research into a web application (app) and answer the following parts:
 
@@ -261,7 +305,6 @@ The realational database model is one of the most common models in databsea tech
 - https://www.atlassian.com/agile#:~:text=What%20is%20the%20Agile%20methodology,planning%2C%20executing%2C%20and%20evaluating.
 - https://en.wikipedia.org/wiki/Agile_software_development
 - https://www.bmc.com/blogs/data-normalization/
-
-
+- https://www.astera.com/type/blog/data-integrity-in-a-database/
 
 - Get pic url
